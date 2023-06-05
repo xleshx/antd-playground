@@ -15,6 +15,11 @@ const items: MenuProps['items'] = [
     key: 'link2',
     icon: <MailOutlined />,
   },
+  {
+    label: (<Link href="/playground-three">Playground 3</Link>),
+    key: 'link3',
+    icon: <SettingOutlined />,
+  },
 ];
 
 export const AntdMenu: React.FC = () => {

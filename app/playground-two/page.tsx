@@ -8,7 +8,7 @@ import AvatarContainer from "./target";
 import { useState } from "react";
 
 export default function PlaygroundTwo() {
-    const [ids, setIds] = useState([])
+    const [ids, setIds] = useState<number[]>([])
 
     const seedIds = [80, 22, 66, 34, 12, 43, 62]
 

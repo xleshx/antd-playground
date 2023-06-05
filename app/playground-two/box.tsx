@@ -1,7 +1,12 @@
 import { Avatar } from 'antd';
 import { useDrag } from "react-dnd"
 
-export default function Box({ id, handler }) {
+interface BoxProps {
+    id: number;
+    handler: (id: number) => void;
+  }
+
+export default function Box({ id, handler }: BoxProps) {
 
     const [{ isDragging }, drag, dragPreview] = useDrag(() => ({
         item: { id: id },
